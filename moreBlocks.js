@@ -9,9 +9,9 @@ class MoreBlocks {
       id: 'moreblocks',
       name: 'More Blocks',
 
-      color1: '#8BC34A',
-      color2: '#7CB342',
-      color3: '#689F38',
+      color1: '#ff4a4a',
+      color2: '#ff3333',
+      color3: '#c41b1b',
 
       menuIconURI: icon,
 
@@ -246,7 +246,7 @@ class MoreBlocks {
   }
 
   currentMillisecond() {
-    return 'Hello'
+    return Date.now() % 1000;
   }
 
   fetchFrom({URL}) {
