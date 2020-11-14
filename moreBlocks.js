@@ -120,19 +120,15 @@ class MoreBlocks {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: 'letters [START] to [END] of [STRING]',
+          text: 'letters [CHAR] of [STRING]',
           arguments: {
-            START: {
+            CHAR: {
               type: Scratch.ArgumentType.NUMBER,
-              defaultValue: 5
-            },
-            END: {
-              type: Scratch.ArgumentType.NUMBER,
-              defaultValue: 7
+              defaultValue: 1
             },
             STRING: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'red apple'
+              defaultValue: 'apple'
             }
           }
         },
@@ -241,8 +237,8 @@ class MoreBlocks {
     return A ? B : C;
   }
 
-  letters({STRING, START, END}) {
-    return STRING.slice(Math.max(1, START) - 1, Math.min(STRING.length, END));
+  letters({STRING, CHAR}) {
+    return STRING.charAt(CHAR);
   }
 
   currentMillisecond() {
