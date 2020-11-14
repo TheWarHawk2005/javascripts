@@ -3,7 +3,7 @@ const icon = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34
 class MoreBlocks {
 
   constructor() {}
-
+ 
   getInfo() {
     return {
       id: 'moreblocks',
