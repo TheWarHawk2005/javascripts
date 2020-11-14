@@ -116,7 +116,7 @@ class MoreBlocks {
           }
         },
         {
-          opcode: 'word',
+          opcode: 'webAlert',
 
           blockType: Scratch.BlockType.REPORTER,
 
