@@ -6,8 +6,8 @@ class Utilities {
 
   getInfo() {
     return {
-      id: 'utilities',
-      name: 'Utlities',
+      id: 'moreblocks',
+      name: 'More Blocks',
 
       color1: '#8BC34A',
       color2: '#7CB342',
@@ -139,7 +139,7 @@ class Utilities {
         {
           opcode: 'currentMillisecond',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'current millisecond'
+          text: 'Value'
         },
         {
           opcode: 'fetchFrom',
