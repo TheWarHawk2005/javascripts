@@ -116,16 +116,12 @@ class MoreBlocks {
           }
         },
         {
-          opcode: 'letters',
+          opcode: 'word',
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: 'letters [CHAR] of [STRING]',
+          text: 'alert [STRING]',
           arguments: {
-            CHAR: {
-              type: Scratch.ArgumentType.NUMBER,
-              defaultValue: 1
-            },
             STRING: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'apple'
@@ -237,8 +233,8 @@ class MoreBlocks {
     return A ? B : C;
   }
 
-  letters({STRING, CHAR}) {
-    return STRING.charAt(CHAR);
+  webAlert({STRING}) {
+    alert(STRING);
   }
 
   currentMillisecond() {
