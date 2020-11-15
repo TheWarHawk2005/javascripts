@@ -17,6 +17,18 @@ class MoreBlocks {
 
       blocks: [
         {
+          opcode: 'log'
+          
+          blockType: Scratch.BlockType.STACK,
+          text: 'console log [STRING]',
+          
+          arguments: {
+            STRING: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Hello World'
+          }
+        },
+        {
           opcode: 'isExactly',
 
           blockType: Scratch.BlockType.BOOLEAN,
@@ -201,6 +213,10 @@ class MoreBlocks {
     }
   }
 
+  log({STRING}) {
+    console.log(STRING')
+  }
+  
   isExactly({A, B}) {
     return A === B;
   }
