@@ -118,13 +118,13 @@ class MoreBlocks {
         {
           opcode: 'webAlert',
 
-          blockType: Scratch.BlockType.REPORTER,
+          blockType: Scratch.BlockType.STACK,
 
           text: 'alert [STRING]',
           arguments: {
             STRING: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'apple'
+              defaultValue: 'hello world'
             }
           }
         },
